@@ -15,4 +15,8 @@ Explanation
 Explanation
 - Hasil yang diperoleh kurang lebih serupa dengan sebelumnya, di mana server berhasil menerima koneksi dari tiga client yang berbeda. Namun, ketika saya mencoba mengubah port pada kode server dan menjalankan client kembali, muncul error "access is denied". Hal ini terjadi karena server mencatat koneksi client berdasarkan port tertentu. Jika port yang digunakan berbeda, maka client akan mengirim permintaan ke port lain yang tidak dikenali oleh server, sehingga koneksi gagal dan muncul error. Situasi ini menunjukkan bahwa client dan server hanya dapat berkomunikasi dengan baik apabila keduanya menggunakan port yang sama sebagai titik koneksi.
 
-- 
+- Small Changes
+![alt text](image-3.png)
+
+Explanation
+- Saya melakukan modifikasi pada kode client dan server agar dapat menampilkan alamat IP dan port dari client yang mengirimkan pesan. Tujuannya adalah untuk membedakan asal setiap pesan, karena masing-masing pengirim belum memiliki nama atau identitas khusus, sehingga informasi IP dan port digunakan sebagai penanda pengirim.
