@@ -31,7 +31,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             Some(msg_result) = ws_stream.next() => {
                 let msg = msg_result?;
                 if let Some(text) = msg.as_text() {
-                    println!("{text}");
+                    println!("Adie's Komputer - From Server:{text}");
                 }
             }
         }

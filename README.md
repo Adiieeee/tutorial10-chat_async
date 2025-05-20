@@ -9,8 +9,10 @@ Explanation
 
 
 
-- Message with port 8080
+- Modifying the Websocket Port
 ![alt text](image-2.png)
 
 Explanation
 - Hasil yang diperoleh kurang lebih serupa dengan sebelumnya, di mana server berhasil menerima koneksi dari tiga client yang berbeda. Namun, ketika saya mencoba mengubah port pada kode server dan menjalankan client kembali, muncul error "access is denied". Hal ini terjadi karena server mencatat koneksi client berdasarkan port tertentu. Jika port yang digunakan berbeda, maka client akan mengirim permintaan ke port lain yang tidak dikenali oleh server, sehingga koneksi gagal dan muncul error. Situasi ini menunjukkan bahwa client dan server hanya dapat berkomunikasi dengan baik apabila keduanya menggunakan port yang sama sebagai titik koneksi.
+
+- 
